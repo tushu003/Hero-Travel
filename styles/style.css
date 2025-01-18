@@ -8,7 +8,9 @@
 }
 
 /* nav part */
-
+body{
+    max-width: 1440px;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -249,3 +251,118 @@ height: 300px;
 .text{
     padding: 110px 0px;
 } 
+
+/* card section */
+
+.cause-title{
+    font-size: 40px;
+font-weight: 800;
+text-align: center;
+color: rgb(19, 19, 24);
+}
+.card-icon{
+    width: 64px;
+height: 64px;
+}
+.card-container{
+    margin: 48px 135px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.card{
+    max-width: 560px;
+height: 284px;
+box-sizing: border-box;
+border: 1px solid rgba(251, 181, 99, 0.2);
+border-radius: 16px;
+padding: 32px 32px 55px;
+background: rgba(251, 181, 99, 0.05);
+}
+.card-2{
+    background-color: rgba(41, 206, 246, 0.05);
+}
+.card-3{
+    max-width: 560px;
+    height: 284px;
+    box-sizing: border-box;
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    border-radius: 16px;
+    padding: 32px 32px 55px;
+    margin: 20px 400px 0px;
+    background-color: rgba(233, 68, 68, 0.05);
+}
+
+/* Deals and Discount */
+
+.deals{
+    margin: 0px 135px;
+}
+.deals-title{
+    text-align: center;
+    margin-bottom: 0px;
+}
+.deals-description{
+    text-align: center;
+    margin-bottom: 48px;
+}
+.discount{
+    background-image: url("../Images/Group\ 39.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-radius: 16px;
+    padding: 30px 50px 0px 530px;
+}
+.deals-discount{
+    max-width: 550px;
+    box-sizing: border-box;
+border: 2px solid rgb(255, 255, 255);
+border-radius: 16px;
+margin-top: 50px;
+padding: 40px;
+backdrop-filter: blur(5px);
+background: rgba(255, 255, 255, 0.8);
+}
+.img{
+    width: 30px;
+    height: 20px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.small-icon{
+    display: flex;
+    gap: 10px;
+}
+.satorini{
+    font-size: 24px;
+font-weight: 800;
+color: rgb(19, 19, 24);
+margin: 0px;
+}
+.price{
+    font-size: 20px;
+font-weight: 800;
+color: rgb(255, 84, 0);
+}
+.discount-2{
+    background-image: url("../Images/Group\ 40.png");
+    padding: 30px 530px 0px 50px ;
+}
+.package-btn{
+    margin: 0 auto;
+}
+
+/* Resposnsive website */
+
+@media screen and (max-width: 576px) {
+    nav{
+        flex-direction: column;
+    }
+    
+}
