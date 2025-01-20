@@ -150,16 +150,14 @@ background: rgb(255, 84, 0);
 }
 .tour-img{
     max-width: 540px;
-height: 550px;
+height: auto;
 border-radius: 16px;
-
-background: url(111);
 }
 
 /* destination */
 
  .destination{ 
-     margin: 100px 135px; 
+margin: 100px 135px; 
 } 
 .destination-title{
 font-size: 40px;
@@ -177,7 +175,7 @@ font-weight: 400;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 0;
+    margin: 48px 0;
  }
 .maldives{
     width: 550px;
@@ -319,11 +317,11 @@ background: rgba(251, 181, 99, 0.05);
     background-image: url("../Images/Group\ 39.png");
     background-repeat: no-repeat;
     width: 100%;
-    height: 500px;
-    margin-bottom: 0px;
+    height: auto;
+    margin-bottom: 20px;
     margin-top: 0px;
     border-radius: 16px;
-    padding: 30px 50px 0px 530px;
+    padding: 30px 50px 50px 530px;
 }
 .deals-discount{
     max-width: 550px;
@@ -342,6 +340,7 @@ background: rgba(255, 255, 255, 0.8);
 .icon{
     display: flex;
     align-items: center;
+    margin-bottom: 16px;
     gap: 5px;
 }
 .small-icon{
@@ -357,11 +356,12 @@ margin: 0px;
 .price{
     font-size: 20px;
 font-weight: 800;
+margin:16px 0px;
 color: rgb(255, 84, 0);
 }
 .discount-2{
     background-image: url("../Images/Group\ 40.png");
-    padding: 30px 530px 0px 50px ;
+    padding: 30px 530px 50px 50px ;
 }
 .package-btn{
     margin: 0 auto;
@@ -376,14 +376,15 @@ color: rgb(255, 84, 0);
 }
 .container1{
     max-width: 532px;
-height: 424px;
+height: auto;
 border-radius: 8px;
 
 }
 .container2{
+    max-width: 610px;
     background-image: url("../Images/Group\ 40089.png");
-    width: 610px;
 height: 424px;
+padding: 0 167px;
 border-radius: 16px;
 }
 .watch{
@@ -398,8 +399,8 @@ margin:176px 0px;
 
 .latter{
     display: block;
-    width: 474px;
-height: 340px;
+    max-width: 474px;
+height: auto;
 padding: 40px;
 border-radius: 8px;
 border: 1px solid rgb(255, 84, 0);
@@ -413,8 +414,8 @@ border: 1px solid rgb(255, 84, 0);
     display: block;
 }
 .img2{
-    width: 672px;
-height: 422px;
+    max-width: 672px;
+height: auto;
 border-radius: 16px;
 
 background: url("../Images/Rectangle\ 8\ \(1\).png");
@@ -424,7 +425,7 @@ background-repeat: no-repeat;
     width: 250px;
 height: 100px;
 padding: 10px 20px;
-margin: 260px 370px 10px 10px;
+margin: 260px 370px 35px 0px;
 margin-left: 370px;
 border-radius: 16px;
 background-color: rgb(255, 84, 0);
@@ -438,13 +439,14 @@ margin-bottom: 0px;
 text-align: center;
 }
 .save{
-    font-size: 32px;
+    font-size: 28px;
 font-weight: 800;
 color: rgb(255, 255, 255);
 margin-top: 0px;
+margin-bottom: 20px;
 }
 
-/* footersection */
+/* footer section */
 
 footer{
     max-width: 1440px;
@@ -482,11 +484,70 @@ height: 16px;
 /* Resposnsive website */
 
 @media screen and (max-width: 576px) {
-    nav{
+    body{
+        margin: 20px;
+    }
+    nav ,.search-container, .tour, .place-container, .news-latter{
         flex-direction: column;
     }
-    nav ul li a{
-        gap: 0;
+    .nav-text ul{
+        gap: 10px;
     }
+    .bannar-title{
+        font-size: 2rem;
+        padding-top: 32px;
+        margin-bottom: 20px;
+    }
+    .search-container{
+        margin-top: 20px;
+    }
+    .tour, .destination, .card-container, .deals, .place-container, .news-latter{
+        margin: 20px 0px;
+    }
+    .tour-img{
+        flex: 1 1 calc(33.33% - 10px);
+        width: 100%;
+        margin: 0px;
+    }
+    .tour-img img{
+        width: 100%;
+    }
+    .destination-img{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .tour-title, .destination-title, .cause-title{
+        font-size: 20px;
+    }
+    .kashmir{
+        max-width: 400px;
+    }
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-3{
+        margin: 0px 0px 20px;
+    }
+    .discount{
+        padding: 140px 16px 16px;
+    }
+    .btn{
+        width: 130px;
+        height: 40px;
+    }
+    .deals-discount{
+        margin: 0px;
+        padding: 20px;
+    }
+    .container2{
+        padding: 30px 70px;
+    }
+    .travel-img{
+        font-size: 20px;
+        font-weight: 500;
+     margin-left: 110px;
+     margin-bottom: 40px;
+    }
+
     
 }
