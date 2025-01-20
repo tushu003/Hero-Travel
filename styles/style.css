@@ -7,6 +7,12 @@
     font-style: normal;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* nav part */
 body{
     max-width: 1440px;
@@ -110,6 +116,9 @@ font-weight: 700;
 color: rgb(255, 255, 255);
 border: none;
 background: rgb(255, 84, 0);
+}
+.search-icon{
+    justify-content: center;
 }
 
 /* shared style */
@@ -358,11 +367,126 @@ color: rgb(255, 84, 0);
     margin: 0 auto;
 }
 
+/* perfact-place */
+
+.place-container{
+    display: flex;
+    margin: 48px 135px;
+    gap: 42px;
+}
+.container1{
+    max-width: 532px;
+height: 424px;
+border-radius: 8px;
+
+}
+.container2{
+    background-image: url("../Images/Group\ 40089.png");
+    width: 610px;
+height: 424px;
+border-radius: 16px;
+}
+.watch{
+    font-size: 24px;
+font-weight: 700;
+text-align: center;
+color: rgb(255, 255, 255);
+margin:176px 0px;
+}
+
+/* Newslatter section */
+
+.latter{
+    display: block;
+    width: 474px;
+height: 340px;
+padding: 40px;
+border-radius: 8px;
+border: 1px solid rgb(255, 84, 0);
+}
+.news-latter{
+    display: flex;
+    margin: 0 135px;
+    gap: 24px;
+}
+.form{
+    display: block;
+}
+.img2{
+    width: 672px;
+height: 422px;
+border-radius: 16px;
+
+background: url("../Images/Rectangle\ 8\ \(1\).png");
+background-repeat: no-repeat;
+}
+.travel-img{
+    width: 250px;
+height: 100px;
+padding: 10px 20px;
+margin: 260px 370px 10px 10px;
+margin-left: 370px;
+border-radius: 16px;
+background-color: rgb(255, 84, 0);
+transform: rotate(-20deg);
+}
+.travel{
+    font-size: 24px;
+font-weight: 400;
+color: rgb(255, 255, 255);
+margin-bottom: 0px;
+text-align: center;
+}
+.save{
+    font-size: 32px;
+font-weight: 800;
+color: rgb(255, 255, 255);
+margin-top: 0px;
+}
+
+/* footersection */
+
+footer{
+    max-width: 1440px;
+height: 400px;
+margin-top: 100px;
+background-color:rgba(19, 19, 24, 0.05);;
+}
+.footer-title{
+justify-content: center;
+margin-bottom: 0px;
+}
+.footer-travel{
+    color: rgb(255, 84, 0);
+}
+nav ul li a:hover{
+    color: rgb(255, 84, 0);
+}
+.footer-description{
+    text-align: center;
+    margin-bottom:0px;
+}
+.contact-icon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.contact img{
+    width: 19.89px;
+height: 16px;
+}
+.year{
+    text-align: center;
+}
+
 /* Resposnsive website */
 
 @media screen and (max-width: 576px) {
     nav{
         flex-direction: column;
+    }
+    nav ul li a{
+        gap: 0;
     }
     
 }
